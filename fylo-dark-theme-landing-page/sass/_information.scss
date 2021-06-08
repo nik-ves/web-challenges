@@ -1,0 +1,30 @@
+.information {
+    text-align: center;
+
+    &__content {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+
+        @media only screen and (max-width: $bp-large) {
+            justify-content: center;
+        }
+    }
+
+    &__box {
+        width: 40rem;
+        padding: 3rem;
+    }
+
+    &__image {
+        margin-bottom: 3rem;
+    }
+
+    &__text {
+        text-align: center;
+        color: $color-white;
+        font-size: 1.4rem;
+        margin-top: 1rem;
+        font-family: $font-raleway;
+    }
+}

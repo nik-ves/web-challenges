@@ -27,6 +27,9 @@ const projects = [
 		name: 'loopstudios-landing-page'
 	},
 	{
+		name: 'fylo-dark-theme-landing-page'
+	},
+	{
 		name: 'ping-coming-soon-page'
 	}
 ];

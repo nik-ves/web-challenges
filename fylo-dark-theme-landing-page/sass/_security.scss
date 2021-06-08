@@ -1,0 +1,56 @@
+.security {
+    text-align: center;
+    background-color: $color-dark-blue-1;
+    background-image: url("../images/bg-curvy-desktop.svg");
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: 100% 40rem;
+    padding-bottom: 10rem;
+
+    @media only screen and (max-width: $bp-large) {
+        padding-bottom: 5rem;
+    }
+
+    @media only screen and (max-width: $bp-small) {
+        background-image: url("../images/bg-curvy-mobile.svg");
+        background-size: 100%;
+    }
+
+    @media only screen and (max-width: $bp-smaller) {
+        margin-top: -2rem;
+    }
+    
+    &__image-box {
+        width: 90%;
+    }
+
+    &__image {
+        max-width: 100%;
+        margin: 2rem;
+    }
+
+    &__content {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+
+        @media only screen and (max-width: $bp-smaller) {
+            margin: 2rem;
+        }
+    }
+
+    &__text {
+        text-align: center;
+        display: flex;
+        align-self: center;
+        color: $color-white;
+        font-size: 1.7rem;
+        max-width: 46rem;
+        font-family: $font-raleway;
+        margin: 2rem 0;
+    }
+
+    &__btn {
+        align-self: center;
+    }
+}
