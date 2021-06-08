@@ -13,6 +13,9 @@ const projects = [
 	},
 	{
 		name: 'intro-component-with-sign-up-form'
+	},
+	{
+		name: 'insure-landing-page'
 	}
 ];
 
