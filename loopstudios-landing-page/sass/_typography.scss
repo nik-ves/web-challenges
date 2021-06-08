@@ -1,0 +1,49 @@
+.heading-1 {
+    font-size: 8rem;
+    text-transform: uppercase;
+    font-family: $font-secondary;
+    font-weight: 300;
+
+    @media only screen and (max-width: $bp-small) {
+        font-size: 6.5em;
+    }
+
+    @media only screen and (max-width: $bp-smallest) {
+        font-size: 5em;
+    }
+}
+
+.heading-2 {
+    font-size: 5rem;
+    text-transform: uppercase;
+    font-family: $font-secondary;
+    font-weight: 300;
+
+    @media only screen and (max-width: $bp-small) {
+        font-size: 4em;
+    }
+}
+
+.btn {
+    text-align:center;
+    display: inline-block;
+    text-decoration: none;
+    text-transform: uppercase;
+    border: 1px solid $color-black;
+    background-color: $color-white;
+    color: $color-black;
+    padding: 1rem 4rem;
+    font-family: $font-primary;
+    font-size: 1.5rem;
+    letter-spacing: 5px;
+
+    &:hover {
+        cursor: pointer;
+        background-color: $color-black;
+        color: $color-white;
+    }
+
+    @media only screen and (max-width: $bp-smaller) {
+        margin-top: 2em;
+    }
+}

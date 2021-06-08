@@ -22,6 +22,9 @@ const projects = [
 	},
 	{
 		name: '3-column-preview-card-component'
+	},
+	{
+		name: 'loopstudios-landing-page'
 	}
 ];
 

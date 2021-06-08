@@ -1,0 +1,124 @@
+.header {
+    height: 70rem;
+    background-image: url("../images/desktop/image-hero.jpg");
+    background-size: cover;
+    padding: 0 3rem;
+
+    @media only screen and (max-width: $bp-smaller) {
+        height: 70em;
+    }
+
+    &__content {
+        display: flex;
+        justify-content: space-between;
+        padding-top: 6rem;
+
+        @media only screen and (max-width: $bp-smallest) {
+            padding-top: 4em;
+        }
+    }
+
+    &__logo {
+        flex-grow: 4;
+        z-index: 10;
+    }
+
+    &__hamburger {
+        align-self: center;
+        z-index: 10;
+
+        &--open {
+            display: none;
+
+            @media only screen and (max-width: $bp-smaller) {
+                display: block;
+            }
+        }
+
+        &--close {
+            display: none;
+        }
+
+        &.open {
+            display: block;
+        }
+
+        &.close {
+            display: none;
+        }
+    }
+
+    &__nav {
+        font-size: 1.8rem;
+        list-style: none;
+        display: flex;
+        flex-grow: 1;
+        justify-content: space-around;
+
+        &.hamburger {
+            display: block;
+            position: absolute;
+            top: 0;
+            right: 0;
+            left: 0;
+            bottom: 0;
+            min-height: 100vh;
+            background-color: $color-black;
+            flex-direction: column;
+            justify-content: flex-start;
+            padding-top: 18em;
+            padding-left: 1.5em;
+        }
+
+        @media only screen and (max-width: $bp-smaller) {
+            display: none;
+        }
+
+        &--item {
+
+            @media only screen and (max-width: $bp-smaller) {
+                font-size: 2.5em;
+                font-family: $font-secondary;
+                text-transform: uppercase;
+                font-weight: 300;
+                padding-bottom: 10px;
+            }
+        }
+
+        &--link {
+            border-bottom: 1px solid $color-white none;
+        }
+    
+        &--link:link,
+        &--link:visited {
+            text-decoration: none;
+            color: $color-white;
+            font-family: $font-primary;
+        }
+    
+        &--link:hover,
+        &--link:active {
+            padding-bottom: 3px;
+            border-bottom: solid;
+        }
+
+        &.show {
+            display: flex;
+            display: block;
+            background-color: red;
+            height: 100%;
+        }
+    }
+
+    &__text {
+        margin-top: 13rem;
+        color: $color-white;
+        border: solid 2px $color-white;
+        padding: 4rem;
+        display: inline-block;  
+
+        @media only screen and (max-width: $bp-smallest) {
+            margin-top: 15em;
+        }
+    }
+}
