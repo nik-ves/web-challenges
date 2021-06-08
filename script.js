@@ -19,6 +19,9 @@ const projects = [
 	},
 	{
 		name: 'huddle-landing-page'
+	},
+	{
+		name: '3-column-preview-card-component'
 	}
 ];
 

@@ -1,0 +1,75 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit; }
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%; }
+
+.container {
+  max-width: 85rem;
+  margin: 0 auto; }
+
+.heading-1 {
+  font-family: "Big Shoulders Display", cursive;
+  font-size: 4rem;
+  color: #f2f2f2;
+  text-transform: uppercase; }
+
+.paragraph {
+  color: rgba(255, 255, 255, 0.75);
+  font-family: "Lexend Deca", sans-serif;
+  font-size: 1.5rem;
+  line-height: 2.5rem;
+  margin: 3rem 0; }
+
+.btn {
+  border: 1px solid rgba(255, 255, 255, 0.75);
+  border-radius: 100px;
+  color: inherit;
+  font-family: "Lexend Deca", sans-serif;
+  font-size: 1.5rem;
+  padding: 1.3rem 2.5rem;
+  margin-top: 4rem;
+  cursor: pointer; }
+  @media only screen and (max-width: 745px) {
+    .btn {
+      flex-direction: column;
+      margin-top: 0; } }
+  .btn:hover {
+    background-color: transparent;
+    border: 1px solid black;
+    color: black; }
+
+.header {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  background-color: #f2f2f2; }
+  @media only screen and (max-width: 745px) {
+    .header {
+      padding: 10em 3em; } }
+  .header__icon {
+    margin-bottom: 3rem; }
+  .header__content {
+    display: flex;
+    border-radius: 10px;
+    overflow: hidden;
+    perspective: 1px; }
+    @media only screen and (max-width: 745px) {
+      .header__content {
+        flex-direction: column; } }
+  .header__box {
+    padding: 4rem; }
+    .header__box--1 {
+      background-color: #e38826;
+      color: #e38826; }
+    .header__box--2 {
+      background-color: #006970;
+      color: #006970; }
+    .header__box--3 {
+      background-color: #004241;
+      color: #004241; }
