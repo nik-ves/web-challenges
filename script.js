@@ -25,6 +25,9 @@ const projects = [
 	},
 	{
 		name: 'loopstudios-landing-page'
+	},
+	{
+		name: 'ping-coming-soon-page'
 	}
 ];
 
