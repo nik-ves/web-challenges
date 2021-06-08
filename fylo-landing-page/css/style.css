@@ -1,0 +1,302 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Raleway:wght@400;700&display=swap');
+
+/* ------------------------------------ */
+/* ---------- General styles ---------- */
+/* ------------------------------------ */
+
+:root {
+    --very-dark-blue: hsl(243, 87%, 12%);
+    --desaturated-blue: hsl(238, 22%, 44%);
+    --bright-blue: hsl(224, 93%, 58%);
+    --moderate-cyan: hsl(170, 45%, 43%);
+    --light-grayish-blue: hsl(240, 75%, 98%);
+    --light-gray: hsl(0, 0%, 75%);
+
+    --raleway: 'Raleway', sans-serif;
+}
+
+*:focus {
+    outline: none;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    background-color: #fff;
+    color: #555;
+    font-family: 'Open Sans', 'sans-serif';
+    font-weight: 700;
+    font-size: 20px;
+    text-rendering: optimizeLegibility;
+    overflow-x: hidden;
+}
+
+.row {
+    width: 80%;
+    margin: 0 auto;
+}
+
+header {
+    height: 200px;
+    margin-top: 30px;
+}
+
+h1 {
+    font-family: var(--raleway);
+    font-weight: 700;
+    color: var(--very-dark-blue);
+    line-height: 50px;
+    font-size: 210%;
+    margin-bottom: 30px;
+    margin-top: 40px;
+}
+
+/* ----------------------------------- */
+/* ---------- Header styles ---------- */
+/* ----------------------------------- */
+
+.img-logo {
+    float: left;
+    display: block;
+    max-width: 100%;
+}
+
+.main-nav {
+    float: right;
+    list-style-type: none;
+}
+
+.main-nav li {
+    display: inline;
+    margin-left: 40px;
+}
+
+.main-nav li:first-child {
+    margin-left: 0;
+}
+
+.main-nav li a:link,
+.main-nav li a:visited {
+    color: var(--very-dark-blue);
+    text-decoration: none;
+    transition: 300ms;
+    padding: 5px;
+    border-bottom: 2px solid transparent;
+}
+
+.main-nav li a:active,
+.main-nav li a:hover {
+    border-bottom: 2px solid var(--very-dark-blue);
+}
+
+/* ------------------------------------------ */
+/* ---------- Intro section styles ---------- */
+/* ------------------------------------------ */
+
+.img-ill-1,
+.img-ill-2 {
+    max-width: 100%;
+}
+
+.img-ill-2 {
+    margin-top: 50px;
+}
+
+.intro-text {
+    padding-bottom: 25px;
+}
+
+.paragraph-text {
+    margin-bottom: 15px;
+    width: 90%;
+}
+
+.email-box {
+    display: inline-block;
+    width: 45%;
+    padding: 15px;
+    border: 1px solid var(--light-gray);
+    border-radius: 5px;
+    margin-right: 10px;
+}
+
+.btn {
+    font-size: 70%;
+    display: inline-block;
+    padding: 10px 50px;
+    background-color: var(--bright-blue);
+    text-align: center;
+    border-radius: 5px;
+    color: white;
+    text-decoration: none;
+}
+
+.btn:link,
+.btn:visited {
+    font-size: 70%;
+    display: inline-block;
+    padding: 10px 50px;
+    background-color: var(--bright-blue);
+    text-align: center;
+    border-radius: 5px;
+    color: white;
+    text-decoration: none;
+    transition: 300ms;
+}
+
+.btn:hover,
+.btn:active {
+    background-color: #052887;
+}
+
+/* -------------------------------------------- */
+/* ---------- Stay productive styles ---------- */
+/* -------------------------------------------- */
+
+.section-productive {
+    margin-top: 300px;
+    padding-bottom: 100px;
+}
+
+
+.how-it-works {
+    border-bottom: 1px solid var(--moderate-cyan);
+    display: inline-block;
+    padding: 2px;
+    margin-bottom: 60px;
+}
+
+.how-it-works a {
+    text-decoration: none;
+    color: var(--moderate-cyan);
+}
+
+.how-it-works img {
+    margin-left: 3px;
+}
+
+.testimonial-box {
+	background-color: #fff;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+	border-radius: 5px;
+	padding: 25px;
+	margin-top: 15px;
+	width: 50%;
+}
+
+.testimonial-box p {
+	font-size: 14px;
+	letter-spacing: 1px;
+	line-height: 145%;
+}
+
+.user-info {
+	display: flex;
+	margin-top: 20px;
+}
+
+.user-info img {
+	border-radius: 50%;
+	height: 50px;
+	margin-right: 10px;
+	width: 50px;
+}
+
+.user-info h4 {
+	font-weight: 700;
+	margin: 0;
+}
+
+/* ------------------------------------ */
+/* ---------- Contact styles ---------- */
+/* ------------------------------------ */
+
+.section-contact h1 {
+    color: white;
+}
+
+.section-contact {
+    padding: 100px 0;
+    background-color: var(--desaturated-blue);
+    color: white;
+}
+
+.section-contact input {
+    display: block;
+    margin-bottom: 15px;
+    margin-top: 50px;
+    width: 80%;
+}
+
+.section-contact p {
+    width: 80%;
+    font-size: 90%;
+    font-weight: 300;
+    line-height: 145%;
+}
+
+/* ----------------------------------- */
+/* ---------- Footer styles ---------- */
+/* ----------------------------------- */
+
+footer {
+    background-color: var(--very-dark-blue);
+    padding: 100px 0 50px 0;
+}
+
+.footer-nav img {
+    margin-right: 15px;
+}
+
+.footer-nav ul:first-of-type {
+    margin-right: 100px;
+}
+
+.footer-nav li {
+    list-style-type: none;
+    margin-bottom: 15px;
+    color: #fff;
+}
+
+.footer-nav a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.footer-nav a:link,
+.footer-nav a:visited {
+    text-decoration: none;
+    color: #fff;
+    transition: 300ms;
+}
+
+.footer-nav a:active,
+.footer-nav a:hover {
+    text-decoration: none;
+    color: rgb(156, 156, 156);
+}
+
+.social-media li {
+    display: inline;
+    color: white;
+    margin-right: 10px;
+}
+
+.circle {
+    border: 1px solid #fff;
+	border-radius: 50%;
+    color: #fff;
+    display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	margin-right: 10px;
+	height: 40px;
+	width: 40px;
+	text-decoration: none;
+}
+

@@ -1,0 +1,139 @@
+/* Veliki tableti do 1200px */
+@media only screen and (max-width: 1200px) {
+    html,
+    body {
+        background-color: #fff;
+        color: #555;
+        font-family: 'Open Sans', 'sans-serif';
+        font-size: 16px;
+        text-rendering: optimizeLegibility;
+        overflow-x: hidden; 
+    }
+
+    .testimonial-box {width: 80%;}
+
+    .section-intro input {
+        margin-bottom: 10px;
+        width: 100%;
+    }
+}
+
+/* Mali tableti i veliki tableti: od 768px do 1023px */
+@media only screen and (max-width: 1023px) {
+    .paragraph-text {width: 100%;}
+    h1 {margin-top: 0;}
+    h1, p {text-align: center;}
+    section-contact p {width: 100%;}
+    footer {text-align: center;}
+    footer ul {margin-top: 20px;}
+    .testimonial-box p {text-align: left;}
+    .btn {width: 100%;}
+    .img-ill-2 {margin: auto;}
+    h4 {text-align: left;}
+    .section-contact {padding: 50px;}
+    .section-contact p {width: 100%;}
+    .how-it-works {margin-bottom: 10px;}
+
+    .flex {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .img-ill-1,
+    .img-ill-2 {
+        max-width: 80%;
+        margin-left: 10%;
+    }
+
+    .col {
+        width: 100%;
+        margin: 0;
+    }
+
+    .section-productive {
+        margin-top: 50px;
+        text-align: center;
+    }
+
+    .section-contact input {
+        margin-left: 10%;
+        margin-top: 20px;
+    }
+
+    p {
+        font-size: 110%;
+        width: 100%;
+    }
+
+    header {
+        height: 10%;
+        margin-bottom: 20px;
+    }
+
+    .testimonial-box {
+        width: 80%;
+        margin-left: 10%;
+    }
+
+    .section-contact input {
+        width: 100%;
+        margin-left: 0;
+    }
+
+    .section-contact a {
+        width: 100%;
+        margin-left: 0;
+    }
+}
+
+/* Mali telefoni i mali tableti: od 481px do 767px */
+@media only screen and (max-width: 767px) {
+    .row {width: 90%;}
+    .main-nav li {margin-left: 10px;}
+    .how-it-works {width: 175px;}
+    .img-logo {width: 30%;}
+    .main-nav li {font-size: 90%;}
+    footer {padding: 50px 0;}
+    .section-productive {padding-bottom: 40px;}
+
+    .img-ill-2 {
+        width: 80%;
+        margin: auto;
+    }
+
+    
+    .btn {
+        width: 100%;
+        margin-left: 0;
+    }
+
+    .col {
+        width: 100%;
+        margin: 0;
+    }
+
+    .section-contact input {
+        width: 100%;
+        margin-left: 0;
+    }
+
+    h1 {
+        font-size: 170%;
+        line-height: 1.4;
+    }
+
+    .social-media {
+        margin-left: 18px;
+    }
+}
+
+
+/* Mali telefoni: od 0px do 480px */
+@media only screen and (max-width: 480px) {
+    .col {
+        width: 100%;
+    }
+}
+
+
+

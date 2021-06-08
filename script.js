@@ -7,6 +7,9 @@ const projects = [
 	},
 	{
 		name: 'project-tracking-intro'
+	},
+	{
+		name: 'fylo-landing-page'
 	}
 ];
 
