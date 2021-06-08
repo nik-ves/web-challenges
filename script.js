@@ -10,6 +10,9 @@ const projects = [
 	},
 	{
 		name: 'fylo-landing-page'
+	},
+	{
+		name: 'intro-component-with-sign-up-form'
 	}
 ];
 
