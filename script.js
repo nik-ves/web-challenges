@@ -16,6 +16,9 @@ const projects = [
 	},
 	{
 		name: 'insure-landing-page'
+	},
+	{
+		name: 'huddle-landing-page'
 	}
 ];
 
