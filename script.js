@@ -31,6 +31,9 @@ const projects = [
 	},
 	{
 		name: 'ping-coming-soon-page'
+	},
+	{
+		name: 'huddle-landing-page-with-curved-sections'
 	}
 ];
 

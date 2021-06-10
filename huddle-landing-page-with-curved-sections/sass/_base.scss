@@ -1,0 +1,38 @@
+// COLORS
+$color-pink: hsl(322, 100%, 66%);
+$color-light-pink: hsl(321, 100%, 78%);
+$color-light-red: hsl(0, 100%, 63%);
+$color-very-dark-cyan: hsl(192, 100%, 9%);
+$color-very-pale-blue: hsl(207, 100%, 98%);
+$color-white: #fff;
+
+// FONTS
+$font-poppins: 'Poppins', sans-serif;
+$font-open-sans: 'Open Sans', sans-serif;
+
+// MEDIA QUERIES BREAKPOINTS
+$bp-largest: 56.5em; // ~900px
+$bp-large: 44em; // ~700px
+$bp-medium: 31.5em; // ~500px
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%; // Makes 1rem = 10px -- 10px/16px = 62.5%
+
+    @media only screen and (max-width: $bp-large) {
+        font-size: 55%;
+    }
+}
+
+.container {
+    max-width: 120rem;
+    margin: 0 auto;
+}

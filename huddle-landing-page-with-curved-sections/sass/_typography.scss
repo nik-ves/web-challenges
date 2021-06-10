@@ -1,0 +1,101 @@
+// HEADING STYLES
+.heading-1,
+.heading-2,
+.heading-3,
+.heading-4 {
+    font-family: $font-poppins;
+}
+
+.heading-1 {
+    font-size: 8rem;
+
+    @media only screen and (max-width: $bp-medium) {
+        font-size: 6.5rem;
+    }
+}
+
+.heading-2 {
+    font-size: 4.5rem;
+
+    @media only screen and (max-width: $bp-large) {
+        font-size: 3rem;  
+    }
+}
+
+.heading-3 {
+    font-size: 4rem;
+
+    @media only screen and (max-width: $bp-medium) {
+        margin-top: 4rem;
+        font-size: 3rem;
+    }
+}
+
+.heading-4 {
+    font-size: 3rem;
+    text-transform: uppercase;
+}
+
+.heading-5 {
+    font-size: 2rem;
+    font-family: $font-open-sans;
+    font-weight: 300;
+    color: gray;
+}
+
+// BUTTON STYLES
+.btn-transparent {
+    padding: 1rem 3rem;
+    cursor: pointer;
+    color: $color-light-pink;
+    border: 1px solid $color-light-pink;
+    background-color: $color-white;
+    border-radius: 100px;
+    font-family: $font-open-sans;
+
+    @media only screen and (max-width: $bp-large) {
+        padding: 0.7rem 2.5rem;          
+    }
+}
+
+.btn-pink {
+    background-color: $color-pink;
+    border: 1px solid $color-pink;
+    font-size: 1.5rem;
+    font-family: $font-open-sans;
+    color: $color-white;
+    cursor: pointer;
+    transition: 0.3s;
+
+    &:hover {
+        border: 1px solid $color-light-pink;
+        background-color: $color-light-pink;
+    }
+}
+
+.btn-pink-big {
+    border-radius: 100px;
+    padding: 2rem 8rem;
+}
+
+.btn-pink-small {
+    padding: 1rem 3rem;
+    border-radius: 5px;
+
+    @media only screen and (max-width: $bp-medium) {
+        width: 100%;
+    }
+}
+
+// ICONS STYLES
+.fab {
+
+    &:hover {
+        color: aqua;
+    }
+}
+
+// HELPER CLASSES 
+.u-margin-bottom {
+    margin-bottom: 3rem;
+}
