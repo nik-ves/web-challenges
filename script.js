@@ -34,6 +34,9 @@ const projects = [
 	},
 	{
 		name: 'huddle-landing-page-with-curved-sections'
+	},
+	{
+		name: 'indiebrew'
 	}
 ];
 

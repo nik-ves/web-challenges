@@ -1,0 +1,402 @@
+// HEADER STYLES
+.header {
+    background: linear-gradient(135deg, $color-pink 0%, $color-light-pink 5%, $color-white 29%);
+    padding-top: 5rem;
+
+    &__box {
+        display: flex;
+
+        &--logo {
+
+            @media only screen and (max-width: $bp-small) {
+                height: 80%;
+                align-self: center;
+            }
+        }
+    }
+
+    &__content {
+        display: flex;
+        justify-content: space-between;
+        padding: 0 3rem;
+    }
+
+    &__nav {
+        display: flex;
+        list-style: none;
+        font-size: 2rem;
+        align-items: center;
+        color: $color-black;
+
+        // Phone and tablet navigation menu
+        @media only screen and (max-width: $bp-medium) {
+            display: none;
+            top: 0;
+            left: 0;
+            position: absolute;
+            z-index: 10;
+            background-color: $color-white;
+            border-bottom: 1px solid $color-black;
+            min-width: 100%;
+            color: $color-white;
+            padding: 2rem 0;
+        }
+
+        &--show {
+            display: block;
+        }
+
+        &--item {
+
+            @media only screen and (max-width: $bp-medium) {
+                padding: 1rem 0;
+                margin-left: 2rem;
+                
+            }
+        }
+
+        &--link {
+            text-decoration: none;
+            padding: 0 2rem;
+            color: $color-black;
+            transition: 0.2s;
+
+            &:hover {
+                color: $color-blue;
+            }
+        }
+    }
+
+    &__hamburger {
+        display: none;
+        align-self: center;
+        z-index: 15;
+
+        @media only screen and (max-width: $bp-medium) {
+            display: block;
+        }
+    }
+}
+
+.intro {
+
+    &__content {
+        display: flex;
+        align-items: center;
+        padding: 10rem 3rem;
+
+        @media only screen and (max-width: $bp-largest) {
+            padding: 5rem 3rem;
+        }
+
+        @media only screen and (max-width: $bp-large) {
+            flex-direction: column-reverse;
+        }
+    }
+
+    &__description {
+        max-width: 66rem;
+        min-width: 50%;
+
+        @media only screen and (max-width: $bp-large) {
+            text-align: center;
+        }
+    }
+
+    &__text {
+        font-size: 2rem;
+        color: $color-gray;
+        margin: 2rem 0 3rem 0;
+    }
+
+    &__avatars {
+        display: block;
+        margin: 3rem 0 2rem 0;
+
+        @media only screen and (max-width: $bp-large) {
+            margin: 3rem auto 2rem auto;
+        }
+    }
+
+    &__box {
+        max-width: 53rem;
+
+        @media only screen and (max-width: $bp-large) {
+            max-width: 65rem;
+            margin-bottom: 2rem;
+        }
+        
+        &--image {
+            max-width: 100%;
+        }
+    }
+}
+
+// ACCESS STYLES
+.access {
+
+    &__content {
+        padding: 0 3rem;
+        margin: 10rem 0;
+
+        @media only screen and (max-width: $bp-large) {
+            margin-top: -10rem;
+        }
+    }
+
+    &__row {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 10rem;
+
+        @media only screen and (max-width: $bp-medium) {
+            flex-direction: column;
+        }
+
+        &--2 {
+
+            @media only screen and (max-width: $bp-medium) {
+                flex-direction: column-reverse;
+            }
+        }
+    }
+
+    &__image-box {
+        max-width: 50rem;
+    }
+
+    &__image {
+
+        &--1 {
+            max-width: 40rem;
+            margin-left: 3rem;
+
+            @media only screen and (max-width: $bp-medium) {
+                margin-left: 0;
+                margin-top: 3rem;
+                max-width: 100%;
+            }
+        }
+
+        &--2 {
+            max-height: 50rem;
+
+            @media only screen and (max-width: $bp-medium) {
+                margin-top: 3rem;
+                max-width: 100%;
+            }
+        }
+    }
+
+    &__text-box {
+        max-width: 68rem;
+
+        @media only screen and (max-width: $bp-medium) {
+            text-align: center;
+        }
+    }
+    
+    &__text {
+        font-size: 2rem;
+        color: $color-gray;
+        margin: 1.5rem 0;
+    }
+
+    &__link {
+        font-size: 2rem;
+        text-decoration: none;
+        color: $color-blue;
+        font-weight: 500;
+        border-bottom: 2px solid transparent;
+        transition: 0.2s;
+
+        &:hover {
+            border-bottom: 2px solid $color-blue;
+        }
+    }
+}
+
+// FOOTER 
+.footer {
+    background-color: $color-footer;
+
+    &__content {
+        display: flex;
+        justify-content: space-between;
+        padding: 5rem 3rem;
+
+        @media only screen and (max-width: $bp-medium) {
+            flex-direction: column;
+        }
+    }
+
+    &__text-box {
+        max-width: 40rem;
+
+        @media only screen and (max-width: $bp-max) {
+            max-width: 30rem;
+        }
+
+        @media only screen and (max-width: $bp-large) {
+            max-width: 35rem;
+        }
+    }
+
+    &__text {
+        font-size: 2rem;
+        color: $color-gray;
+        margin: 1rem 0 4rem 0;
+    }
+
+    &__list {
+        list-style-type: none;
+        font-size: 2rem;
+        
+        &--item {
+            color: $color-black;
+            margin-bottom: 1rem;
+        }
+
+        &--link {
+            text-decoration: none;
+            color: $color-gray;
+            transition: 0.2s;
+
+            &:hover {
+                border-bottom: 1px solid $color-gray;
+            }
+        }   
+    }
+}
+
+// SIGN UP STYLES
+.signup {
+    background: linear-gradient(135deg, $color-white 0%, $color-signup-pink 66%, $color-white 99%);
+    padding-top: 5rem;
+    min-height: 100vh;
+
+    &__box {
+        display: flex;
+
+        &--logo {
+
+            @media only screen and (max-width: $bp-small) {
+                height: 80%;
+                align-self: center;
+            }
+        }
+    }
+
+    &__content {
+        padding: 0 3rem;
+    }
+
+    &__navigation {
+        display: flex;
+        justify-content: space-between;
+
+        &--links {
+            display: flex;
+            align-items: center;
+        }
+
+        &--text {
+            font-size: 2rem;
+            padding-left: 1.5rem;
+            font-weight: 700;
+
+            @media only screen and (max-width: $bp-medium) {
+                display: none;
+            }
+        }
+    }
+
+    &__row {
+        margin-top: 10rem;
+        padding-bottom: 10rem;
+        display: flex;
+        justify-content: space-between;
+
+        @media only screen and (max-width: $bp-largest) {
+            flex-direction: column;
+        }
+
+        @media only screen and (max-width: $bp-medium) {
+            margin-top: 5rem;
+            padding-bottom: 5rem;
+        }
+    }
+
+    &__info {
+        max-width: 49rem;
+        align-self: center;
+
+        @media only screen and (max-width: $bp-max) {
+            max-width: 40rem;
+        }
+    }
+
+    &__icon {
+        height: 3rem;
+        margin-right: 1rem;
+    }
+
+    &__text-box {
+        display: flex;
+        font-size: 2rem;
+        margin: 2rem 0;
+    }
+
+    &__weight {
+        font-weight: 700;
+    }
+
+    &__form {
+        padding: 5rem;
+        background-color: $color-white;
+        border-radius: 10px;
+        font-size: 1.5rem;
+        max-width: 50rem;
+        margin-left: 3rem;
+        
+        @media only screen and (max-width: $bp-largest) {
+            align-self: center;
+            margin-top: 3rem;
+            margin-left: 0;
+        }
+
+        @media only screen and (max-width: $bp-medium) {
+            padding: 3rem;
+        }
+
+        &--row {
+            display: flex;
+            flex-direction: column;
+            margin-top: 2rem;
+        }
+        
+        &--label {
+            margin-bottom: 1rem;
+            font-weight: 700;
+        }
+
+        &--input {
+            padding: 1.5rem;
+            border-radius: 5px;
+            border: 1px solid $color-gray;
+            outline: none;
+        }
+
+        &--flex {
+            display: flex;
+            font-size: 1.7rem;
+            margin-bottom: 3rem;
+
+            & input {
+                margin-right: 1rem;
+                margin-top: 0.5rem;
+            }
+        }
+    }
+}
