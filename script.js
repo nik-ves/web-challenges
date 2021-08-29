@@ -1,62 +1,75 @@
 const projects = [
 	{
-		name: 'four-card-feature-section'
+		name: 'four-card-feature-section',
+		challenge: 'frontend-mentor-challenges'
 	},
 	{
-		name: 'clipboard-landing-page'
+		name: 'clipboard-landing-page',
+		challenge: 'frontend-mentor-challenges'
 	},
 	{
-		name: 'project-tracking-intro'
+		name: 'project-tracking-intro',
+		challenge: 'frontend-mentor-challenges'
 	},
 	{
-		name: 'fylo-landing-page'
+		name: 'fylo-landing-page',
+		challenge: 'frontend-mentor-challenges'
 	},
 	{
-		name: 'intro-component-with-sign-up-form'
+		name: 'intro-component-with-sign-up-form',
+		challenge: 'frontend-mentor-challenges'
 	},
 	{
-		name: 'insure-landing-page'
+		name: 'insure-landing-page',
+		challenge: 'frontend-mentor-challenges'
 	},
 	{
-		name: 'huddle-landing-page'
+		name: 'huddle-landing-page',
+		challenge: 'frontend-mentor-challenges'
 	},
 	{
-		name: '3-column-preview-card-component'
+		name: '3-column-preview-card-component',
+		challenge: 'frontend-mentor-challenges'
 	},
 	{
-		name: 'loopstudios-landing-page'
+		name: 'loopstudios-landing-page',
+		challenge: 'frontend-mentor-challenges'
 	},
 	{
-		name: 'fylo-dark-theme-landing-page'
+		name: 'fylo-dark-theme-landing-page',
+		challenge: 'frontend-mentor-challenges'
 	},
 	{
-		name: 'ping-coming-soon-page'
+		name: 'ping-coming-soon-page',
+		challenge: 'frontend-mentor-challenges'
 	},
 	{
-		name: 'huddle-landing-page-with-curved-sections'
+		name: 'huddle-with-curved-sections',
+		challenge: 'frontend-mentor-challenges'
 	},
 	{
-		name: 'indiebrew'
+		name: 'indiebrew',
+		challenge: 'codewell-challenges'
 	}
 ];
 
 const list = document.getElementById('list');
 
-projects.forEach(({ name }) => {
+projects.forEach(({ name, challenge }) => {
 	const listItem = document.createElement('li');
 
 	listItem.innerHTML = `
-		<a href="/${name}/index.html" target="_blank">
-			<img src="/${name}/design/desktop-design.jpg" alt="${name}" />
+		<a href="${challenge}/${name}/index.html" target="_blank">
+			<img src="${challenge}/${name}/design/desktop-design.jpg" alt="${name}" />
 			<p>${formatProjectName(name)}</p>
 		</a>
 
 		<div class="links-container">
-			<a href="https://github.com/nik-ves/${name}" class="black">
+			<a href="https://github.com/nik-ves/${name}" class="black" target="_blank">
 				<i class="fab fa-github"></i>
 			</a>
 
-			<a href="/${name}/index.html" class="black">
+			<a href="${challenge}/${name}/index.html" class="black" target="_blank">
 				<i class="fas fa-eye"></i>
 			</a>
 		</div>
