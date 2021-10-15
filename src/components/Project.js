@@ -8,16 +8,21 @@ const Project = ({ name, githubLink, previewLink, imgPath }) => {
 
   return (
     <li>
-      <a href={previewLink} target="_blank">
+      <a href={previewLink} target="_blank" rel="noreferrer">
         <img src={imgPath} alt={name} />
         <p>{formatedName(name)}</p>
       </a>
 
       <div className="links-container">
-        <a href={githubLink} className="black" target="_blank">
+        <a href={githubLink} className="black" target="_blank" rel="noreferrer">
           <i className="fab fa-github"></i>
         </a>
-        <a href={previewLink} className="black" target="_blank">
+        <a
+          href={previewLink}
+          className="black"
+          target="_blank"
+          rel="noreferrer"
+        >
           <i className="fas fa-eye"></i>
         </a>
       </div>
