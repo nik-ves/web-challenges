@@ -107,6 +107,14 @@ const PROJECTS = [
     previewLink: "https://nik-ves.github.io/indiebrew",
     imgPath: "/images/indiebrew.jpg",
   },
+  {
+    id: 14,
+    name: "chirp",
+    challenge: "codewell",
+    githubLink: "https://github.com/nik-ves/chirp-landing-page",
+    previewLink: "https://nik-ves.github.io/chirp-landing-page/",
+    imgPath: "/images/chirp.jpg",
+  }
 ];
 
 export default PROJECTS;
